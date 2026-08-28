@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 	
+	Student Name: Layne Heim
+	File Name: extend03.html
+	Date: 08/28/2026
+-->
+<html lang="en">
+<head>
+	<title>CH 3 Extend Your Knowledge</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+        <header>
+		<h1>Working with Images and Graphics</h1>
+	</header>
+
+	<nav>
+		<p><a href="https://learn.microsoft.com/en-us/answers/questions/2547735/how-do-i-resize-a-picture-in-paint" target="_blank">Software Application </a> &nbsp; &#9679; &nbsp;</p>
+		<p><a href="https://compressor.io" target="_blank">Online Compressor</a> &nbsp; &#9679; &nbsp;</p>
+		<p><a href="https://www.w3schools.com/html/html5_svg.asp" target="_blank">SVG Resource</a></p>
+	</nav>
+
+	<main>
+
+		<div id="image">
+
+            <h3>Modifying Images</h3>
+
+            <!-- 1st paragraph element: Use the paragraph element below to explain the importance of using descriptive file names for image files. Use complete sentences. -->
+            <p>It is important to use descriptive file names for images because it helps with organization and makes it easier to find specific images later.</p>
+
+            <!-- 2nd paragraph element: Use the paragraph element below to identify the application you used to change the size of the image. Use a complete sentence. -->
+            <p>I used Paint to change the size of the image.</p>
+
+            <!-- 3rd paragraph element: Use the paragraph element below to identify the original size of the image, in pixels. Use a complete sentence. -->
+            <p>The original size of the image was 2121 x 1414 pixels.</p>
+
+            <h4>Image Before Compression</h4>
+            <!-- Use image element below to insert the image before compression, html5.jpg -->
+            <img src="images/html5.jpg.jpg" alt="hand writing HTML 5 on glass" height="200" width="300">
+
+            <!-- 4th paragraph element: Use the paragraph element below to identify the online image compressor you used to reduce the file size. What was the original image file size? What was the reduced image file size? Use complete sentences.  -->
+            <p>I used compressor.io to reduce the file size. The original image file size was 28.2KB. The reduced image file size was 7.17 KB.</p>
+
+            <h4>Image After Compression</h4>
+            <!-- Use image element below to insert the image after compression, html5_min.jpg -->
+            <img src="images/html5_min.jpg.jpg" alt="hand writing HTML 5 on glass" height="200" width="300">
+
+            <!-- 5th paragraph element: Use the paragraph element below to note any visual changes that you can see between html5.jpg and html5_min.jpg -->
+            <p>The image after compression is more pixelated and is less defined. The colors also appear less vibrant.</p>
+
+        </div>
+
+        <div id="svg">
+
+        <h3>SVG Graphics</h3>
+
+                <!-- Insert your SVG code below this comment -->
+                <svg height="200" width="300">
+                          <defs>
+                                <linearGradient id="grad1">
+                                        <stop offset="0%" stop-color="red" />
+                                        <stop offset="100%" stop-color="blue" />
+                                </linearGradient>
+                          </defs>
+                        <rect x="50" y="20" rx="20" ry="20" width="250" height="150" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="75" font-family="Verdana" x="95" y="120">SVG</text>
+                        Sorry, your browser does not support inline SVG.
+                </svg>
+
+                <!-- 6th paragraph element: Use the paragraph element below to provide information about the resource you used to help create your SVG image -->
+                <p>I used W3Schools.com to help create my SVG image.</p>
+
+        </div>
+
+	</main>
+
+	<footer>
+		<p>Student Name: Layne Heim</p>
+		<p>Chapter 3, Extend Your Knowledge</p>
+	</footer>
+
+</body>
+</html>
