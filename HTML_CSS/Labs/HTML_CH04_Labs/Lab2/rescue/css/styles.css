@@ -69,3 +69,27 @@ main ul{
   font-weight: bold;
   font-style: italic;
 }
+
+#action{
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact{
+  text-align: center;
+}
+
+/*Style rules for footer content */
+footer{
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding: 1%, 0%, 1%, 0%;
+}
+
+footer a{
+  color: #f3e6d8;
+  text-decoration: none;
+}
