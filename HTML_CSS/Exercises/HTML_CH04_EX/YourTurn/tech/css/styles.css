@@ -28,7 +28,9 @@ header{
 
 /* figure out how to make banner less tall */
 .banner{
-  max-width: 100%;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
 }
 
 nav{
