@@ -1,0 +1,71 @@
+/* Name: Layne Heim
+   File Name: styles.css
+   Date: 09/04/2026
+*/
+
+/* CSS Reset - resets all main selectors before adding css code */
+header, body, nav, main, footer, img, h1{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* display: flex; and flex-direction: column; are not mentioned in chapter 4. display: flex; allows movement for whatever is in the selector it is placed in.
+flex-direction: column; allows the flex to know which direction the items are supposed to move too.
+Them together and flex-grow: 1; in main put the footer at the bottom of the page even if there is open space.*/
+body{
+  background-color: #074d78;
+  color: #c4e1f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+header{
+  text-align: center;
+}
+
+/* figure out how to make banner less tall */
+.banner{
+  max-width: 100%;
+}
+
+nav{
+  text-align: center;
+  color: #e4f2fa;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #e4f2fa;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+main{
+ text-align: center;
+ flex-grow: 1;
+}
+
+footer{
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+#past a{
+  
+}
+
+#today a{
+  text-decoration: none;
+  color: #90caf1;
+}
