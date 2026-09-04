@@ -23,11 +23,9 @@ header, body, nav, main, footer, img{
   font-style: normal;
 }
 
-
 img{
   max-width: 100%;
   display: block;
-  margin: 2%;
 }
 
 body{
@@ -81,21 +79,28 @@ main{
  font-family: "Akaya Kanadaka", Arial, sans-serif;
 }
 
-.float-img{
-  float: left;          
-}
-
 #options img{
   border-radius: 15px;
+  margin: auto;
 }
 
 #options h3{
   color: #915656;
+  font-size: 1.75em;
+}
+
+#options ul{
+  list-style-position: inside;
+}
+
+#options ol{
+  list-style-position: inside;
 }
 
 #options li{
-  text-align: left;
+  text-align: center;
   font-family: "Akaya Kanadaka", Arial, sans-serif;
+  font-size: 1.50em;
 }
 
 #contact{
