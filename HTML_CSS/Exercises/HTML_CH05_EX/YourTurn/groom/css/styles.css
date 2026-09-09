@@ -46,7 +46,7 @@ header{
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(95, 130, 163);
   position: relative;
 }
 
@@ -55,11 +55,12 @@ header{
 }
 
 .topnav a {
-  color: #915656;
+  color: #f6b0b0;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
+  font-family: Knewave, Arial, sans-serif;
 }
 
 .topnav a.icon {
