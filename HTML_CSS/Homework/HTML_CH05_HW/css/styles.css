@@ -1,0 +1,102 @@
+body, header, nav, h1, img, main, footer{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  background-color: #ffeacd;
+}
+
+.logo{
+  max-width: 15%;
+}
+
+h1{
+  display: inline;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  font-size: 160%;
+  color: #ff6100;
+  font-family: Graduate, Arial, sans-serif;
+}
+
+#center-text{
+  text-align: center;
+  margin: auto;
+}
+
+/* Mobile navigation */
+@media (max-width: 431px) {
+
+  .topnav {
+    overflow: hidden;
+    background-color: #d57841;
+    position: relative;
+  }
+
+  .topnav .myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: Graduate, Arial, sans-serif;
+  }
+/* Replace first font with whatever special font you want */
+
+  .topnav a.icon {
+    background: #d57841;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #d57841;
+    color: #ffeacd;
+  }
+
+  .active {
+    background-color: #d57841;
+    color: #ffeacd;
+  }
+}
+
+/* tablet-desk nav bar */
+@media (max-width: 1399px) {
+
+  nav{
+    font-family: Graduate, Arial, sans-serif;
+    background-color: #d57841;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: #fff;
+    display: inline;
+  }
+
+  #menu-b{
+    display: none;
+  }
+
+  main{
+
+  }
+
+  footer{
+
+  }
+}
+.graduate-regular {
+  font-family: "Graduate", serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 Homework</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/psfsl.png" alt="a simplistic orange fox paw print outlined in black on a white background" class="logo">
+    <div id="center-text">
+      <h1>Palmetto State Foxes</h1>
+    </div>
+  </header>
+
+  <nav>
+    <div class="topnav">
+      <a href="index.html" class="active">Home</a>
+      <div class="myLinks">
+        <a href="teams.html">Teams</a>
+        <a href="stats.html">Stats</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+      </div>
+      <div id="menu-b">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          &#9776;
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+  </main>
+
+  <footer>
+    <p>&copy; Palmetto State Foxes 2007</p>
+    <p>Layne Heim 09/10/2026</p>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.querySelector(".myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
