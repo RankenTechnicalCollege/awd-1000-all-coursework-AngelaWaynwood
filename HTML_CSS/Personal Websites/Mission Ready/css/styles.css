@@ -7,7 +7,7 @@ body, header, nav, ul, main, footer{
 body{
   background-color: #eadfd4;
   text-align: justify;
-  font-family: "Playfair Display", serif, sans-serif;
+  font-family: "Barlow Condensed", Cambria, sans-serif;
 }
 
 
@@ -22,7 +22,7 @@ aside{
   flex-direction: column;
   min-height: 270vh;
   text-align: center;
-  box-shadow: -2px 0px gray;
+  box-shadow: -1px 0px gray;
 }
 /* Aside Code - End */
 
@@ -35,8 +35,9 @@ header{
   text-align: center;
 }
 
-h1{
-  font-family: "Playfair Display", serif, sans-serif;
+h2{
+  font-family: "Barlow Condensed", Cambria, sans-serif;
+  text-align: center;
 }
 
 #color{
@@ -78,6 +79,7 @@ nav li a:hover{
 /* Main Code - Start */
 main{
   flex: 1;
+  margin-left: 10px;
 }
 
 main p{
@@ -91,6 +93,10 @@ main h3{
 
 main h4{
   text-align: center;
+}
+
+ul{
+padding-left: 40px;
 }
 /* Main Code - End */
 
@@ -137,10 +143,112 @@ footer{
 }
 /* Footer Code - End */
 
+/* Google Fonts - Start */
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-.playfair-display {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* Google Fonts - End */
