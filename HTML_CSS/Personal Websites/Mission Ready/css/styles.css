@@ -10,21 +10,6 @@ body{
   font-family: "Barlow Condensed", Cambria, sans-serif;
 }
 
-/* Aside Code - Start */
-aside{
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  background-color: #eadfd4;
-  display: flex;
-  flex-direction: column;
-  min-height: 270vh;
-  text-align: center;
-  box-shadow: -1px 0px gray;
-}
-/* Aside Code - End */
-
 /* Header Code - Start */
 .logo{
   max-width: 30%;
@@ -33,25 +18,77 @@ aside{
 header{
   text-align: center;
 }
-
-h2{
-  font-family: "Barlow Condensed", Cambria, sans-serif;
-  text-align: center;
-}
-
-#color{
-  color: #7a8f64;
-}
-
-#color-a{
-  color: #8b5e3c;
-}
 /* Header Code - End */
+
+@media screen and (max-width:640px){
+  nav ul li a{
+    display: none; /* Not removing space above nav bar */
+  }
+/* Mobile navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #98b27d;
+  position: relative;
+}
+
+.topnav .myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #382618;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: "Barlow Condensed", Cambria, sans-serif;
+}
+/* Replace first font with whatever special font you want */
+.topnav a.icon {
+  background: #7a8f64;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #acc591;
+  color: #000;
+}
+
+.active {
+  background-color: #7a8f64;
+  color: #eadfd4;
+}
+
+}
+
+@media screen and (min-width:641px) and (max-width:768px){
+  /* Aside Code - Start */
+aside{
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  background-color: #eadfd4;
+  display: flex;
+  flex-direction: column;
+  min-height: 260vh;
+  text-align: center;
+  box-shadow: -1px 0px gray;
+}
+/* Aside Code - End */
+
+.topnav {
+  display: none;
+}
 
 /* Nav Code - Start */
 nav{
   background-color: #7a8f64;
   text-align: center;
+  background-size: cover;
 }
 
 nav li{
@@ -142,6 +179,48 @@ footer{
   font-size: .75em;
 }
 /* Footer Code - End */
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Google Fonts - Start */
 .barlow-condensed-thin {
