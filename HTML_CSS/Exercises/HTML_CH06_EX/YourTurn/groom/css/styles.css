@@ -1,0 +1,169 @@
+/*
+  Name: Layne Heim
+  Date: 09/03/2026
+  File Name:styles.css
+*/
+
+/* CSS Reset - resets the look of all main selectors */
+header, body, nav, main, footer, img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.akaya-kanadaka-regular {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+body{
+  background-color: rgb(195, 220, 243);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+/* header */
+header{
+  text-align: center;
+  font-family: Knewave, Arial, sans-serif;
+}
+
+/* Mobile navigation */
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(95, 130, 163);
+  position: relative;
+}
+
+.topnav .myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #b67070;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: Knewave, Arial, sans-serif;
+}
+
+.topnav a.icon {
+  background: #915656;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(95, 130, 163);
+}
+
+.active {
+  background-color: rgb(95, 130, 163);
+  color: white;
+}
+
+/* nav */
+nav{
+
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li{
+  font-family: Knewave, Arial, sans-serif;
+  display: inline-block;
+  font-size: 1.25em;
+
+}
+
+nav li a{
+  display: block;
+  color: #915656;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* main */
+main{
+  text-align: center;
+  font-family: "Akaya Kanadaka", Arial, sans-serif;
+  flex-grow: 1;
+}
+
+#intro{
+ font-family: "Akaya Kanadaka", Arial, sans-serif;
+}
+
+#options img{
+  border-radius: 15px;
+  margin: auto;
+}
+
+#options h3{
+  color: #915656;
+  font-size: 1.75em;
+}
+
+#options ul{
+  list-style-position: inside;
+}
+
+#options ol{
+  list-style-position: inside;
+}
+
+#options li{
+  text-align: center;
+  font-family: "Akaya Kanadaka", Arial, sans-serif;
+  font-size: 1.50em;
+}
+
+#contact{
+  font-family: "Akaya Kanadaka", Arial, sans-serif;
+}
+
+#contact a{
+  color: #915656;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+iframe{
+  border-radius: 15px;
+  width: 100%;
+}
+
+/* footer */
+footer{
+  text-align: center;
+}
+
+footer a{
+  color: #915656;
+  font-weight: bold;
+  text-decoration: none;
+}
