@@ -27,6 +27,18 @@
       <li><a href="rescources.html">Client Resources</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="topnav">
+      <a href="services.html" class="active">Services</a>
+      <div class="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Client Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+      </a>
+    </div>
   </nav>
 
   <main>
@@ -35,7 +47,7 @@
       <p>Mon&ndash;Thurs - 8:00AM&ndash;4:00PM</p>
       <br>
       <h3>Contact Information</h3>
-      <p>Email:<a href="mailto:jennifer@missionreadyadvisory.com">jennifer@missionreadyadvisory.com</a></p>
+      <p class="email">Email:<a href="mailto:jennifer@missionreadyadvisory.com">jennifer@missionreadyadvisory.com</a></p>
       <p>Call:<a href="tel:+1">123&dash;456&dash;7891</a></p>
     </aside>
     <div class="intro">
@@ -131,6 +143,16 @@
     <p>MissionReady Advisory Services provides consulting and advisory services and does not perform audits, reviews,
       compilations, or other attest services or issue assurance reports or opinions.</p>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.querySelector(".myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>

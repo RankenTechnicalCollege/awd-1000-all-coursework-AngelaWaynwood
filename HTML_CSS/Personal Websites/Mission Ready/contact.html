@@ -27,6 +27,18 @@
       <li><a href="rescources.html">Client Resources</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="topnav">
+      <a href="contact.html" class="active">Contact</a>
+      <div class="myLinks">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Client Resources</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+      </a>
+    </div>
   </nav>
 
   <main>
@@ -62,6 +74,15 @@
     <p>MissionReady Advisory Services provides consulting and advisory services and does not perform audits, reviews,
       compilations, or other attest services or issue assurance reports or opinions.</p>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.querySelector(".myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </body>
-
 </html>
