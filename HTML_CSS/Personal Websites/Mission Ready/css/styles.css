@@ -15,13 +15,19 @@ body{
   max-width: 30%;
 }
 
-header{
+.header{
   text-align: center;
 }
 /* Header Code - End */
 
 /* Media Query for Phone */
 @media screen and (max-width:654px){
+
+  /* Hero Page - Start */
+  .hero h1 { font-size: 2em; }
+  
+  .hero { padding: 60px 20px; }
+  /* Hero Page - End */
 
   nav ul li a{
     display: none; /* Not removing space above nav bar */
@@ -84,6 +90,12 @@ header{
   }
   /* Main code - End */
 
+  /* intro Code - Start */
+  .intro h2{
+    text-align: center;
+  }
+  /* intro Code - End */
+
    /* Footer Code - Start */
   footer{
     text-align: center;
@@ -95,6 +107,76 @@ header{
 /* Media Query for Tablet */
 @media screen and (min-width:655px) and (max-width:800px){
  
+  /* Hero Code - Start */
+.logo-hero{
+  max-width: 50%;
+}
+
+.hero {
+  background: linear-gradient(135deg, #7a8f64 0%, #acc591 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #ebebeb;
+}
+/* Hero Code - End */
+
+/* Hero Buttons - Start */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #acc591;
+}
+
+.btn-primary:hover {
+  background-color: #f8faf8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Hero Buttons - End */
+
+
   /* Aside Code - Start */
   aside{
     width: 220px;
@@ -104,8 +186,7 @@ header{
     background-color: #eadfd4;
     display: flex;
     flex-direction: column;
-    column-count: 1;
-    min-height: 82vh;
+    min-height: 270vh;
     text-align: center;
     box-shadow: -1px 0px gray;
   }
@@ -158,6 +239,7 @@ header{
     margin-left: 15px;
   }
 
+
   main h3{
     text-align: center;
   }
@@ -171,6 +253,12 @@ header{
   }
   /* Main Code - End */
 
+  /* Div - img Code - Start */
+  .image-side{
+    display: none;
+  }
+  /* Div - img Code - End */
+
   /* Div - intro Code - Start */
   .intro{
     background-color: #a9ca8675;
@@ -179,6 +267,22 @@ header{
 
   .intro p{
     margin-left: 15px;
+    text-align: center;
+  }
+
+  .intro h2{
+    text-align: center;
+  }
+
+  .one{
+    font-style: italic;
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+
+  #italic{
+    font-style: italic;
+    font-weight: 300;
   }
   /* Div - intro Code - End */
 
@@ -206,8 +310,81 @@ header{
   /* Footer Code - End */
 }
 
+
+
+/* Media Query for Desktop */
 @media screen and (min-width:800px) and (max-width:1024px){
   
+  /* Hero Code - Start */
+.logo-hero{
+  max-width: 40%;
+}
+
+.hero {
+  background: linear-gradient(135deg, #7a8f64 0%, #acc591 100%);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #ebebeb;
+}
+/* Hero Code - End */
+
+/* Hero Buttons - Start */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #acc591;
+}
+
+.btn-primary:hover {
+  background-color: #f8faf8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Hero Buttons - End */
+
+
   /* Aside Code - Start */
   aside{
     width: 220px;
@@ -284,6 +461,21 @@ header{
   }
   /* Main Code - End */
 
+  /* Div - box Code - Start */
+  .box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  /* Div - box Code - End */
+
+/* Div - img Code - Start */
+  .image-side{
+    width: 200px;
+    height: auto;
+  }
+  /* Div - img Code - End */
+  
   /* Div - intro Code - Start */
   .intro{
     background-color: #a9ca8675;
@@ -292,6 +484,11 @@ header{
 
   .intro p{
     margin-left: 15px;
+    text-align: center;
+  }
+
+  .intro h2{
+    text-align: center;
   }
   /* Div - intro Code - End */
 
@@ -321,6 +518,225 @@ header{
 
 
 
+
+/* Media Query for Large Desktop */
+@media screen and (min-width: 1025px){
+
+  /* Hero Code - Start */
+.logo-hero{
+  max-width: 30%;
+}
+
+.hero {
+  background: linear-gradient(135deg, #7a8f64 0%, #acc591 100%);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #ebebeb;
+}
+/* Hero Code - End */
+
+/* Hero Buttons - Start */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #acc591;
+}
+
+.btn-primary:hover {
+  background-color: #f8faf8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Hero Buttons - End */
+
+
+
+
+
+
+  /* Aside Code - Start */
+  aside{
+    width: 220px;
+    padding: 0px 5px;
+    margin-left: 8px;
+    float: right;
+    background-color: #eadfd4;
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    min-height: 220vh;  /* <--- Change height for each page and each media query (?) find way to make it adjustable */
+    text-align: center;
+    box-shadow: -1px 0px gray;
+  }
+
+  .email{
+    word-wrap: break-word;
+  }
+  /* Aside Code - End */
+
+  .topnav {
+    display: none;
+  }
+
+  /* Nav Code - Start */
+  nav{
+    background-color: #7a8f64;
+    text-align: center;
+    background-size: cover;
+  }
+
+  nav li{
+    display: inline;
+    margin: auto;
+    padding: 10px;
+  }
+
+  nav li a{
+    text-decoration: none;
+    color: #382618;
+    font-weight: bold;
+    font-size: 1.75em;
+  }
+
+  nav li a:hover{
+    background-color: #acc591;
+    font-size: 1.85em;
+    border-radius: 5px;
+    color: #eadfd4;
+  }
+  /* Nav Code - End */
+
+  /* Main Code - Start */
+  main{
+    flex: 1;
+    font-size: 1.10em;
+  }
+
+  main p{
+    font-size: 1.05em;
+    padding: .5%;
+    margin-left: 15px;
+  }
+
+  main h3{
+    text-align: center;
+  }
+
+  main h4{
+    text-align: center;
+  }
+
+  ul{
+  padding-left: 40px;
+  }
+  /* Main Code - End */
+
+  /* Div - box Code - Start */
+  .box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  /* Div - box Code - End */
+
+  /* Div - img Code - Start */
+  .image-side{
+    width: 300px;
+    height: auto;
+  }
+  /* Div - img Code - End */
+
+  /* Div - intro Code - Start */
+  .home{
+    flex: 1;
+  }
+
+  .intro{
+    background-color: #a9ca8675;
+    background-size: cover;
+  }
+
+  .intro p{
+    margin-left: 15px;
+    text-align: center;
+  }
+
+  .intro h2{
+    text-align: center;
+  }
+
+  .one{
+    font-style: italic;
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+  /* Div - intro Code - End */
+
+  /* Link/Button Code - Start */
+  .link{
+    text-align: center;
+  }
+
+  .link a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #7a8f64;
+  }
+  /* Link/Button Code - End */
+
+  hr{
+    border: 1px solid #8b5e3c;
+  }
+
+  /* Footer Code - Start */
+  footer{
+    text-align: center;
+    font-size: .75em;
+  }
+  /* Footer Code - End */
+}
 
 
 
