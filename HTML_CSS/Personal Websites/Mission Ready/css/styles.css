@@ -20,6 +20,13 @@ body{
 }
 /* Header Code - End */
 
+
+
+
+
+
+
+
 /* Media Query for Phone */
 @media screen and (max-width:654px){
 
@@ -90,11 +97,49 @@ body{
   }
   /* Main code - End */
 
-  /* intro Code - Start */
+  /* Div - intro Code - Start */
+  .intro{
+    background-color: #a9ca8675;
+    background-size: cover;
+  }
+
+  .intro p{
+    margin-left: 15px;
+    text-align: center;
+  }
+
   .intro h2{
     text-align: center;
   }
-  /* intro Code - End */
+
+  .one{
+    font-style: italic;
+    font-size: 1.75em;
+    font-weight: 200;
+  }
+
+  #italic{
+    font-style: italic;
+    font-weight: 300;
+  }
+  /* Div - intro Code - End */
+
+
+  /* About - intro Code - Start */
+  #placeholder{
+    float: left;
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 100px;
+    height: auto;
+    border-radius: 200px;
+  }
+
+  .wrapper{
+    display: flow-root;
+    text-align: right;
+  }
+  /* About - intro Code - End */
 
    /* Footer Code - Start */
   footer{
@@ -103,6 +148,11 @@ body{
   }
   /* Footer Code - End */
 }
+
+
+
+
+
 
 /* Media Query for Tablet */
 @media screen and (min-width:655px) and (max-width:800px){
@@ -286,6 +336,22 @@ body{
   }
   /* Div - intro Code - End */
 
+  /* About - intro Code - Start */
+  #placeholder{
+    float: left;
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 150px;
+    height: auto;
+    border-radius: 200px;
+  }
+
+  .wrapper{
+    display: flow-root;
+    text-align: right;
+  }
+  /* About - intro Code - End */
+
   /* Link/Button Code - Start */
   .link{
     text-align: center;
@@ -309,6 +375,9 @@ body{
   }
   /* Footer Code - End */
 }
+
+
+
 
 
 
@@ -492,6 +561,22 @@ body{
   }
   /* Div - intro Code - End */
 
+  /* About - intro Code - Start */
+  #placeholder{
+    float: left;
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 200px;
+  }
+
+  .wrapper{
+    display: flow-root;
+    text-align: right;
+  }
+  /* About - intro Code - End */
+
   /* Link/Button Code - Start */
   .link{
     text-align: center;
@@ -515,6 +600,9 @@ body{
   }
   /* Footer Code - End */
 }
+
+
+
 
 
 
@@ -590,11 +678,6 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
 }
 /* Hero Buttons - End */
-
-
-
-
-
 
   /* Aside Code - Start */
   aside{
