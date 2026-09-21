@@ -606,7 +606,7 @@ body{
     display: flex;
     flex-direction: column;
     column-count: 1;
-    min-height: 220vh;  /* <--- Change height for each page and each media query (?) find way to make it adjustable */
+    min-height: 280vh;  /* <--- Change height for each page and each media query (?) find way to make it adjustable */
     text-align: center;
     box-shadow: -1px 0px gray;
   }
@@ -713,6 +713,47 @@ body{
     font-weight: 200;
   }
   /* Div - intro Code - End */
+
+  /* About - intro Code - Start */
+  #placeholder{
+    float: left;
+    margin-right: 15px;
+    width: 500px;
+    height: auto;
+  }
+
+  .wrapper{
+    display: flow-root;
+  }
+  /* About - intro Code - End */
+
+  /* About - Headers */
+  .about h4{
+    font-size: 1.35em;
+    color: #7a8f64;
+  }
+  /* About - headers - End */
+
+  /* About - Div - why Code - Start */
+  .why p{
+    text-align: center;
+    font-size: 1.25em;
+  }
+  /* About - Div - why Code - End */
+
+  /* About - Div - specilized Code - Start */
+  .specilized p{
+    text-align: center;
+    font-size: 1.25em;
+  }
+  /* About - Div - specilized Code - End */
+
+  /* About - Div - practical Code - Start */
+  .practical p{
+    text-align: center;
+    font-size: 1.25em;
+  }
+  /* Div - practical Code - End */
 
   /* Link/Button Code - Start */
   .link{
