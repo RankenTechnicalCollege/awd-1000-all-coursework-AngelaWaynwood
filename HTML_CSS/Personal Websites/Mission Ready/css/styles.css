@@ -226,25 +226,42 @@ body{
 }
 /* Hero Buttons - End */
 
+  
+  /* Column Code - Start */
 
-  /* Aside Code - Start */
-  aside{
-    width: 220px;
-    padding: 0px 5px;
-    margin-left: 8px;
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col1{
+    margin-top:15px;
+    height: 400px;
+    width: 30%;
     float: right;
-    background-color: #eadfd4;
-    display: flex;
-    flex-direction: column;
-    min-height: 270vh;
+    padding: 5px;
+    background: linear-gradient(#98b27d, #eadfd4);
+    border-radius: 15px;
     text-align: center;
-    box-shadow: -1px 0px gray;
+  }
+
+  .col_main{
+    float: left;
+    width: 65%;
   }
 
   .email{
     word-wrap: break-word;
+    color: #324320;
+    font-weight: bold;
   }
-  /* Aside Code - End */
+
+  .call{
+    color: #324320;
+    font-weight: bold;
+  }
+  /* Column Code - End */
 
   .topnav {
     display: none;
@@ -341,6 +358,7 @@ body{
     float: left;
     margin-top: 10px;
     margin-right: 15px;
+    margin-left: 5px;
     width: 150px;
     height: auto;
     border-radius: 200px;
@@ -454,25 +472,41 @@ body{
 /* Hero Buttons - End */
 
 
-  /* Aside Code - Start */
-  aside{
-    width: 220px;
-    padding: 0px 5px;
-    margin-left: 8px;
+  /* Column Code - Start */
+
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col1{
+    margin-top:15px;
+    height: 450px;
+    width: 30%;
     float: right;
-    background-color: #eadfd4;
-    display: flex;
-    flex-direction: column;
-    column-count: 1;
-    min-height: 220vh;  /* <--- Change height for each page and each media query (?) find way to make it adjustable */
+    padding: 5px;
+    background: linear-gradient( #98b27d, #eadfd4);
+    border-radius: 15px;
     text-align: center;
-    box-shadow: -1px 0px gray;
+  }
+
+  .col_main{
+    float: left;
+    width: 65%;
   }
 
   .email{
     word-wrap: break-word;
+    color: #324320;
+    font-weight: bold;
   }
-  /* Aside Code - End */
+
+  .call{
+    color: #324320;
+    font-weight: bold;
+  }
+  /* Column Code - End */
 
   .topnav {
     display: none;
@@ -566,6 +600,7 @@ body{
     float: left;
     margin-top: 10px;
     margin-right: 15px;
+    margin-left: 5px;
     width: 200px;
     height: auto;
     border-radius: 200px;
@@ -679,25 +714,41 @@ body{
 }
 /* Hero Buttons - End */
 
-  /* Aside Code - Start */
-  aside{
-    width: 220px;
-    padding: 0px 5px;
-    margin-left: 8px;
+ /* Column Code - Start */
+
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col1{
+    margin-top:15px;
+    height: 500px;
+    width: 30%;
     float: right;
-    background-color: #eadfd4;
-    display: flex;
-    flex-direction: column;
-    column-count: 1;
-    min-height: 280vh;  /* <--- Change height for each page and each media query (?) find way to make it adjustable */
+    padding: 5px;
+    background: linear-gradient( #98b27d, #eadfd4);
+    border-radius: 15px;
     text-align: center;
-    box-shadow: -1px 0px gray;
+  }
+
+  .col_main{
+    float: left;
+    width: 65%;
   }
 
   .email{
     word-wrap: break-word;
+    color: #324320;
+    font-weight: bold;
   }
-  /* Aside Code - End */
+
+  .call{
+    color: #324320;
+    font-weight: bold;
+  }
+  /* Column Code - End */
 
   .topnav {
     display: none;
@@ -820,23 +871,26 @@ body{
   /* About - Div - why Code - Start */
   .why p{
     text-align: center;
-    font-size: 1.25em;
   }
   /* About - Div - why Code - End */
 
   /* About - Div - specilized Code - Start */
   .specilized p{
     text-align: center;
-    font-size: 1.25em;
   }
   /* About - Div - specilized Code - End */
 
   /* About - Div - practical Code - Start */
   .practical p{
     text-align: center;
-    font-size: 1.25em;
   }
   /* Div - practical Code - End */
+
+/* Div - mission Code - Start */
+  .mission{
+    text-align: center;
+  }
+/* Div - mission Code - End */
 
   /* Link/Button Code - Start */
   .link{
@@ -1005,3 +1059,10 @@ body{
   font-style: italic;
 }
 /* Google Fonts - End */
+
+@media print{
+  body{
+    background-color: #fff;
+    color: #000;
+  }
+}
