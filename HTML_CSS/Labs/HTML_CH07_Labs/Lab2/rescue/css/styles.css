@@ -4,7 +4,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3{
+body, header, nav, main, footer, img, h1, h3, aside, figure, figcaption{
   margin: 0;
   padding: 0;
   border: 0;
@@ -74,6 +74,21 @@ main ul{
   font-size: 1.75em;
   font-weight: bold;
   text-align: center;
+}
+
+.round{
+  border-radius: 6px;
+}
+
+aside{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px #c5a687;
+}
+
+#info ul{
+  margin-left: 10%;
 }
 
 .contact{
