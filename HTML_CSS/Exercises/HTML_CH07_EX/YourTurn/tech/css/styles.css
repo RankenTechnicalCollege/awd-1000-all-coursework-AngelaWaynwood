@@ -1,0 +1,276 @@
+/* Name: Layne Heim
+   File Name: styles.css
+   Date: 09/04/2026
+*/
+
+/* CSS Reset - resets all main selectors before adding css code */
+header, body, nav, main, footer, img, h1{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.iceland-regular {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* display: flex; and flex-direction: column; are not mentioned in chapter 4. display: flex; allows movement for whatever is in the selector it is placed in.
+flex-direction: column; allows the flex to know which direction the items are supposed to move too.
+Them together and flex-grow: 1; in main put the footer at the bottom of the page even if there is open space.*/
+body{
+  background-color: #074d78;
+  color: #c4e1f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  font-family: Iceland, Arial, Cambria;
+}
+
+footer{
+  text-align: center;
+}
+
+
+
+/* Media Query for Tablet */
+@media screen and (max-width: 760px){
+
+  .tab-desk{
+    display: none;
+  }
+
+  header{
+    text-align: center;
+    font-family: Audiowide, Arial, Cambria;
+  }
+
+  /* Mobile navigation */
+
+  .topnav {
+    overflow: hidden;
+    background-color: #053c5d;
+    position: relative;
+  }
+
+  .topnav .myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: #90caf1;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: Quantico, Arial, sans-serif;
+  }
+
+  .topnav a.icon {
+    background: #03273d;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(95, 130, 163);
+  }
+
+  .active {
+    background-color: #053c5d;
+    color: white;
+  }
+
+  main{
+  text-align: center;
+  flex-grow: 1;
+  }
+
+  img{
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+  }
+
+  #past a{
+    text-decoration: none;
+    color: #90caf1;
+    font-weight: bold;
+  }
+
+  #today a{
+    text-decoration: none;
+    color: #90caf1;
+  }
+}
+/* Media Query for Desktop */
+@media screen and (min-width: 761px) and (max-width: 1024px){
+
+  body{
+    background: linear-gradient( #074d78, #03273d);
+  }
+
+  header{
+    text-align: center;
+    font-family: Audiowide, Arial, Cambria;
+  }
+
+  /* Nav */
+
+  nav{
+    text-align: center;
+    color: #e4f2fa;
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  nav li a{
+    text-decoration: none;
+    color: #e4f2fa;
+    padding: 0.5em 1em;
+    font-weight: bold;
+  }
+
+  nav li a:hover{
+    background-color: #03273d;
+    color: #ffffff;
+  }
+
+  .topnav{
+    display: none;
+  }
+
+  main{
+  text-align: center;
+  flex-grow: 1;
+  }
+
+  img{
+    max-width: 50%;
+    display: block;
+    border-radius: 12px;
+  }
+
+  #past a{
+    text-decoration: none;
+    color: #90caf1;
+    font-weight: bold;
+  }
+
+  #today{
+    column-count: 2;
+  }
+
+  #today a{
+    text-decoration: none;
+    color: #90caf1;
+  }
+}
+/* Media Query for Large Desktop */
+@media screen and (min-width: 1025px){
+  body{
+    background: linear-gradient( #0f6397, #053d5f);
+  }
+
+  header{
+    text-align: center;
+    font-family: Audiowide, Arial, Cambria;
+  }
+
+  /* Nav */
+
+  nav{
+    text-align: center;
+    color: #e4f2fa;
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  nav li a{
+    text-decoration: none;
+    color: #e4f2fa;
+    padding: 0.5em 1em;
+    font-weight: bold;
+  }
+
+  nav li a:hover{
+    background-color: #03273d;
+    color: #ffffff;
+  }
+
+  .topnav{
+    display: none;
+  }
+
+  main{
+  text-align: center;
+  flex-grow: 1;
+  }
+
+  img{
+    max-width: 50%;
+    display: block;
+    border-radius: 12px;
+  }
+
+  #past a{
+    text-decoration: none;
+    color: #90caf1;
+    font-weight: bold;
+  }
+
+  #today{
+    column-count: 4;
+  }
+
+  #today a{
+    text-decoration: none;
+    color: #90caf1;
+  }
+}
+
+/* Media Query for Print */
+@media print{
+  body{
+    background-color: #ffffff;
+    color: #000
+  }
+}
