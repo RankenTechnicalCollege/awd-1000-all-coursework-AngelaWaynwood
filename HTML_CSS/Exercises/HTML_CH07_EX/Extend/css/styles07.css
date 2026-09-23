@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Layne Heim
+Date: 09/23/2026
+File Name: style07.css
 */
 
 /* CSS Reset */
@@ -29,6 +29,17 @@ header {
 /* Style rules for main content  */
 main {
 	background-color: #fff;
+}
+
+article{
+	display: flex;
+	gap: 20px;
+}
+
+section{
+	flex: 1;
+	padding: 15px;
+	background-color: #95c375;
 }
 
 aside {
