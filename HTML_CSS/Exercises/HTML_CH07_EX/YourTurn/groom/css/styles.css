@@ -190,13 +190,7 @@ footer a{
     width: 100%;
   }
 
-  .grid-1{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .grid-2{
+  .grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -301,13 +295,7 @@ footer a{
     width: 100%;
   }
 
-  .grid-1{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .grid-2{
+  .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -374,7 +362,7 @@ footer a{
   }
 
   #options{
-    column-count: 2;
+    column-count: repeat(2, 1fr);
   }
 
   #options img{
@@ -424,13 +412,7 @@ footer a{
     width: 100%;
   }
 
-  .grid-1{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .grid-2{
+  .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
