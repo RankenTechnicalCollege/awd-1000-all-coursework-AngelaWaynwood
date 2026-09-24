@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset - resets the look of all main selectors */
-header, body, nav, main, footer, img{
+header, body, nav, main, footer, img, article, section, figure, figcaption{
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,6 +34,25 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+}
+
+aside{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #20356176;
+}
+
+figure{
+  border: 4px solid #593232;
+  box-shadow: 6px 6px 10px rgba(38, 78, 117, 0.5);
+  max-width: 200px;
+  margin: 2% auto;
+}
+
+figcaption{
+  padding: 2%;
+  border-top: 4px solid #593232;
 }
 
 /* footer */
@@ -156,7 +175,7 @@ footer a{
     font-size: 1.50em;
   }
 
-#contact{
+  #contact{
     font-family: "Akaya Kanadaka", Arial, sans-serif;
   }
 
@@ -169,6 +188,22 @@ footer a{
   iframe{
     border-radius: 15px;
     width: 100%;
+  }
+
+  .grid-1{
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10px;
+  }
+
+  .grid-2{
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10px;
+  }
+
+  aside{
+    grid-column: 1 / span 1;
   }
 }
 
@@ -251,7 +286,7 @@ footer a{
     font-size: 1.50em;
   }
 
-#contact{
+  #contact{
     font-family: "Akaya Kanadaka", Arial, sans-serif;
   }
 
@@ -264,6 +299,22 @@ footer a{
   iframe{
     border-radius: 15px;
     width: 100%;
+  }
+
+  .grid-1{
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10px;
+  }
+
+  .grid-2{
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10px;
+  }
+
+  aside{
+    grid-column: 1 / span 2;
   }
 }
 /* Media Query for Large Desktop */
@@ -349,7 +400,7 @@ footer a{
     font-size: 1.50em;
   }
 
-#contact{
+  #contact{
     font-family: "Akaya Kanadaka", Arial, sans-serif;
   }
 
@@ -362,6 +413,30 @@ footer a{
   iframe{
     border-radius: 15px;
     width: 100%;
+  }
+  
+  figure{
+    max-width: 400px;
+  }
+
+  figure img{
+    max-width: 400px;
+  }
+
+  .grid-1{
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10px;
+  }
+
+  .grid-2{
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10px;
+  }
+
+  aside{
+    grid-column: 1 / span 2;
   }
 }
 /* Media Query for Print */
