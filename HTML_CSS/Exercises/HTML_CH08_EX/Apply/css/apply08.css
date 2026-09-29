@@ -1,0 +1,64 @@
+/*
+Author: Layne Heim
+Date: 09/29/2026
+File Name: apply08.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Changes the size and color of the table */
+table {
+	width: 80%;
+	margin: 0 auto;
+	border: 3px solid #71881b;
+}
+
+/* Give the table as a whole a solid border */
+table, tr, th, td {
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+/* Changes the font size, and gives padding and margin space to the caption */
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/* gives a solid colored border around the table head and data */
+th, td {
+	border: 1px solid #7188bb;
+}
+
+/* aligned the text of the table data */
+td {
+	text-align: center;
+}
+
+/* Changes the background color of the table row */
+tr {
+	background-color: #d3e788;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}

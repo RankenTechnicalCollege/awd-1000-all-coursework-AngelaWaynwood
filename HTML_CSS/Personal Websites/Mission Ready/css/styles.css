@@ -36,7 +36,7 @@ body{
   .hero { padding: 60px 20px; }
   /* Hero Page - End */
 
-  nav ul li a{
+  nav ul li {
     display: none; /* Not removing space above nav bar */
   }
   /* Mobile navigation */
@@ -124,6 +124,11 @@ body{
   }
   /* Div - intro Code - End */
 
+  /* Div - col1 Code - Start */
+  .col1{
+    display: none;
+  }
+  /* Div - row Code - Start */
 
   /* About - intro Code - Start */
   #placeholder{
@@ -274,10 +279,10 @@ body{
     background-size: cover;
   }
 
-  nav li{
-    display: inline;
-    margin: auto;
-    padding: 10px;
+  nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
   }
 
   nav li a{
@@ -592,6 +597,12 @@ body{
 
   .intro h2{
     text-align: center;
+  }
+
+  .one{
+    font-style: italic;
+    font-size: 1.75em;
+    font-weight: 200;
   }
   /* Div - intro Code - End */
 
