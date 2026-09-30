@@ -1,0 +1,72 @@
+/* 
+  Name: Layne Heim
+  Date: 09/30/2026
+*/
+
+body, table, footer, tbody, tr, th, td{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  background-color: #ffe5dc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 80%;
+	margin: 0 auto;
+  border: 10px solid #fd4d0c;
+  box-shadow: 10px 10px 10px #792101;
+}
+
+caption {
+  color: #792101;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 2%;
+}
+
+#row {
+  background-color: #792101;
+  font-size: 1.25em;
+  color: #ffe5dc;
+}
+
+#row th {
+  border: 1px solid #ffe5dc;
+}
+
+#row1 {
+  background-color: #792101;
+  font-size: 1.25em;
+  color: #ffe5dc;
+}
+
+#row1 th {
+  border: 1px solid #ffe5dc;
+}
+
+th {
+  border: 2px solid #a22c02;
+  text-align: center;
+}
+
+td {
+  border: 2px solid #a22c02;
+}
+
+tr:nth-child(odd) {
+  background-color: #fe9772;
+}
+
+table, tr, th, td {
+	border-collapse: collapse;
+  padding: 2%;
+}
+
+footer {
+	font-size: .70em;
+	text-align: center;
+}
