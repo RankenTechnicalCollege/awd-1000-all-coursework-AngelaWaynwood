@@ -17,15 +17,29 @@
         <main>
 
             <form class="grid">
-                <input type="text" name="fName" id="fName">
-                <input type="text" name="lName" id="lName">
-                <input type="email" name="email" id="email">
-                <input type="tel" name="phone" id="phone">
-                <input type="text" name="cName" id="cName">
-                <input type="number" name="cNum" id="cNum">
-                <input type="text" name="expDate" id="expDate" placeholder="MM/YY">
-                <input type="number" name="ccv" id="ccv">
-                <input type="submit" name="submit" id="submit">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                        <input type="text" name="fName" id="fName">
+                        <label for="fName">First Name:</label><br>
+                        <input type="text" name="lName" id="lName">
+                        <label for="lName">Last Name:</label><br>
+                        <input type="email" name="email" id="email">
+                        <label for="email">Email Address:</label><br>
+                        <input type="tel" name="phone" id="phone">
+                        <label for="phone">Phone Number:</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                        <input type="text" name="cName" id="cName">
+                        <label for="cName">Card Name:</label><br>
+                        <input type="number" name="cNum" id="cNum">
+                        <label for="cNum">Card Number:</label><br>
+                        <input type="text" name="expDate" id="expDate" placeholder="MM/YY">
+                        <label for="expDate">Expiration Date:</label><br>
+                        <input type="number" name="ccv" id="ccv">
+                        <label for="ccv">CCV:</label><br>
+                </fieldset>
+                <input type="submit" name="submit" id="submit" class="btn">
             </form>
 
         </main>
