@@ -8,9 +8,14 @@ table {
   border-collapse: collapse;
   border: 2px solid #000;
   margin: 20px auto;
+  width: 80%;
 }
 
-tr, td {
+tr {
+  border: 2px solid #000;
+}
+
+td {
   border: 2px solid #000;
   text-align: center;
 }
@@ -19,6 +24,15 @@ th {
   background-color: yellow;
   border: 2px solid #000;
   text-align: left;
+}
+
+.thcenter {
+  text-align: center;
+}
+
+.thright {
+  text-align: right;
+  padding-right: 5%;
 }
 
 tr:nth-child(odd) {

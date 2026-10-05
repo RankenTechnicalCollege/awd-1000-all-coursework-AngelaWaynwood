@@ -1,0 +1,82 @@
+body, table, tr, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #000;
+  margin: 20px auto;
+  width: 80%;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 5%;
+}
+
+tr {
+  border: 2px solid #000;
+}
+
+td {
+  border: 2px solid #000;
+  text-align: center;
+}
+
+th {
+  border: 2px solid #000;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.header {
+  background-color: yellow;
+}
+
+#header {
+  background-color: yellow;
+}
+
+.side-header {
+  background-color: #fff;
+  border: 2px solid #000;
+  padding-left: 2%;
+}
+
+.total {
+  background-color: yellow;
+  text-align: right;
+  padding-right: 5%;
+}
+
+.thcenter {
+  text-align: center;
+}
+
+.thright {
+  text-align: right;
+  padding-right: 5%;
+}
+
+tr:nth-child(odd) {
+  background-color: yellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold1 {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 5%;
+}
+
+#bold1 {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 5%;
+}

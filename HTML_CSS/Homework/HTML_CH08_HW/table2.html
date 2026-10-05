@@ -4,21 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 8 Homework-Table</title>
-  <link rel="stylesheet" href="css-table1/table-styles1.css">
+  <title>Chapter 8 Homework-Form</title>
+  <link rel="stylesheet" href="css-table2/table-style2.css">
 </head>
 
 <body>
-  <div id="table1">
+  <div>
     <table>
-      <caption></caption>
+      <caption>Employee Table</caption>
       <tbody>
         <tr>
-          <th>Name</th>
-          <th>E-mail</th>
-          <th class="thcenter">Years of Service</th>
+          <th class="header">Department</th>
+          <th class="header">Name</th>
+          <th class="header">E-mail</th>
+          <th id="header" class="thcenter">Years of Service</th>
         </tr>
         <tr>
+          <th class="side-header" rowspan="3">Editorial</th>
           <td>Joel Murach</td>
           <td>joelmurach@yahoo.com</td>
           <td class="thright">22</td>
@@ -34,6 +36,7 @@
           <td class="thright">4</td>
         </tr>
         <tr>
+          <th class="side-header" rowspan="2">Marketing</th>
           <td>Judy Taylor</td>
           <td>judy@murach.com</td>
           <td class="thright">39</td>
@@ -44,6 +47,7 @@
           <td class="thright">10</td>
         </tr>
         <tr>
+          <th class="side-header" rowspan="2">Customer Service</th>
           <td>Kelly Slivkoff</td>
           <td>kelly@murach.com</td>
           <td class="thright">25</td>
@@ -52,6 +56,10 @@
           <td>Juliette Baylon</td>
           <td>juliette@murach.com</td>
           <td class="thright">1</td>
+        </tr>
+        <tr>
+          <th class="total" colspan="3">Total Years of Service</th>
+          <td id="bold1" class="thright">105</td>
         </tr>
       </tbody>
     </table>
