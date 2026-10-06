@@ -78,3 +78,7 @@ input[type="text"], input[type="email"], textarea {
 p {
   font-weight: bold;
 }
+
+select {
+  width: 100%;
+}
