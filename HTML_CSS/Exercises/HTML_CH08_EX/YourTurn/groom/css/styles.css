@@ -56,8 +56,37 @@ figcaption{
 }
 
 #tab-mobile {
-    display: none;
+    display: block;
   }
+
+#service {
+  display: none;
+}
+
+/* Style rules for form elements */
+fieldset, input, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label{
+  display: block;
+  padding-top: 2%;
+}
+
+#submit{
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #a15050;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
 
 /* footer */
 footer{
@@ -180,7 +209,17 @@ footer a{
   }
 
   #tab-mobile {
+    display: block;
+  }
+
+  #service {
     display: none;
+  }
+
+  /* Tablet Viewport: Style rule for form elements */
+  form{
+    width: 70%;
+    margin: 0 auto;
   }
 
   #contact{
@@ -288,7 +327,56 @@ footer a{
     font-size: 1.50em;
   }
 
-  
+  /* Desktop style for table */
+  #service {
+    display: block;
+  }
+
+  #tab-mobile {
+    display: none;
+  }
+
+  caption {
+    padding: 3%;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-shadow: 2px 2px #394d60a0;
+  }
+
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 3px solid #331d1d;
+    background-color: #7498b9;
+    box-shadow: -4px 5px #394d60a0;
+  }
+
+  th {
+    background-color: #c37979;
+  }
+
+  tr, td {
+    border: 3px solid #331d1d;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #dc9797;
+  }
+
+  /* Desktop Viewport: Style rule for form elements */
+  form{
+    width: auto;
+  }
+
+  .form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .btn{
+    grid-column: 1 / span 2;
+  }
 
   #contact{
     font-family: "Akaya Kanadaka", Arial, sans-serif;
@@ -397,6 +485,57 @@ footer a{
     text-align: center;
     font-family: "Akaya Kanadaka", Arial, sans-serif;
     font-size: 1.50em;
+  }
+
+    /* Desktop style for table */
+  #service {
+    display: block;
+  }
+
+  #tab-mobile {
+    display: none;
+  }
+
+  caption {
+    padding: 3%;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-shadow: 2px 2px #394d60a0;
+  }
+
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 3px solid #331d1d;
+    background-color: #7498b9;
+    box-shadow: -4px 5px #394d60a0;
+  }
+
+  th {
+    background-color: #c37979;
+  }
+
+  tr, td {
+    border: 3px solid #331d1d;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #dc9797;
+  }
+
+  /* Large Desktop Viewport: Style rule for form elements */
+  form{
+    width: auto;
+  }
+
+  .form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .btn{
+    grid-column: 1 / span 2;
   }
 
   #contact{

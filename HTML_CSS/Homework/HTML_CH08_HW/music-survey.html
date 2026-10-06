@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 8 Homework - Forms</title>
+  <link rel="stylesheet" href="music-styles/music-styles.css">
+</head>
+
+<body>
+  <div id="form">
+    <h1>Music Survey</h1>
+    <form>
+      <label><input type="text" name="name" id="name">Name:</label>
+      <label><input type="text" name="email" id="email">E-Mail:</label>
+      <fieldset class="col">
+        <legend>Select your favorite music genre</legend>
+        <label><input type="radio" name="qrock" value="Rock" id="qrock">Rock</label>
+        <label><input type="radio" name="qpop" value="Pop" id="qpop">Pop</label>
+        <label><input type="radio" name="qhip" value="Hip Hop" id="qhip">Hip Hop</label>
+        <label><input type="radio" name="qelec" value="Electronic" id="qelec">Electronic</label>
+        <label><input type="radio" name="qjazz" value="Jazz" id="qjazz">Jazz</label>
+        <label><input type="radio" name="qclass" value="Classical" id="qclass">Classical</label>
+        <label><input type="radio" name="qcountry" value="Country" id="qcountry">Country</label>
+        <label><input type="radio" name="qrb" value="R&B" id="qrb">R&B</label>
+        <label><input type="radio" name="qother" value="Other" id="qother">Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Select what music services that you use (one or more)</legend>
+        <label><input type="checkbox" name="spotify" id="spotify">Spotify</label>
+        <label><input type="checkbox" name="apple" id="apple">Apple Music</label>
+        <label><input type="checkbox" name="amazon" id="amazon">Amazon Music</label>
+        <label><input type="checkbox" name="youtube" id="youtube">Youtube Music</label>
+        <label><input type="checkbox" name="sirius" id="sirius">SiriusXM</label>
+        <label><input type="checkbox" name="tidal" id="tidal">TIDAL</label>
+        <label><input type="checkbox" name="qubuz" id="qobuz">Qobuz</label>
+        <label><input type="checkbox" name="pandora" id="pandora">Pandora</label>
+        <label><input type="checkbox" name="heart" id="heart">iHeart Radio</label>
+        <label><input type="checkbox" name="deez" id="deez">Deezer</label>
+        <label><input type="checkbox" name="cloud" id="cloud">SoundCloud</label>
+        <label><input type="checkbox" name="other" id="other">Other</label>
+      </fieldset>
+      <label for="what">What does music do for you?</label>
+      <select name="what" id="what" size="4" multiple>
+        <option value="Relax">Relax</option>
+        <option value="Motivate">Motivate</option>
+        <option value="Focus">Focus</option>
+        <option value="Reflect">Reflect</option>
+      </select>
+      <p>What's your favorite song and what does it mean to you?</p>
+      <textarea name="favorite" id="favorite"></textarea>
+      <input type="submit" name="submit" value="Submit" id="submit" class="btn">
+      <input type="reset" name="reset" value="Reset" id="reset" class="btn">
+    </form>
+  </div>
+</body>
+
+</html>

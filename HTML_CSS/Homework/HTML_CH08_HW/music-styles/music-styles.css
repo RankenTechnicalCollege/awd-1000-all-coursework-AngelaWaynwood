@@ -1,0 +1,55 @@
+body, form, fieldset, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Style rules for form elements */
+fieldset, input, textarea {
+  margin-bottom: 2%;
+  background-color: rgb(216, 216, 216);
+}
+
+h1{
+  text-align: center;
+  color: rgb(0, 145, 0);
+}
+
+input{
+  margin: 2%;
+}
+
+fieldset legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+fieldset{
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 5%;
+}
+
+#submit{
+  background-color: green;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#reset{
+  background-color: rgb(128, 0, 0);
+  border-radius: 5px;
+  color: #fff;
+}
+
+form {
+  width: auto;
+  margin: 5%;
+}
+
+.btn {
+  grid-column: 1 / span 2;
+}
+
+textarea{
+  width: 100%;
+}
