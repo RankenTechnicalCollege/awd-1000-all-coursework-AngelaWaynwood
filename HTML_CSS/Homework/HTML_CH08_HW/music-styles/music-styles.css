@@ -53,3 +53,28 @@ form {
 textarea{
   width: 100%;
 }
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col label {
+  display: block;
+  padding: 5px;
+}
+
+form > label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+}
+
+p {
+  font-weight: bold;
+}
