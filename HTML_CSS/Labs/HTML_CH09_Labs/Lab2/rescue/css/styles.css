@@ -4,7 +4,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, aside, figure, figcaption{
+body, header, nav, main, footer, img, h1, h3, aside, figure, figcaption, video{
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,7 +15,7 @@ body{
   background-color: #f6eee4;
 }
 
-img{
+img, video{
   max-width: 100%;
   display: block;
 }
