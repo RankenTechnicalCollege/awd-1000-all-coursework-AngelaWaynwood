@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset - resets the look of all main selectors */
-header, body, nav, main, footer, img, article, section, figure, figcaption{
+header, body, nav, main, footer, img, article, section, figure, figcaption, video{
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,7 +23,7 @@ header, body, nav, main, footer, img, article, section, figure, figcaption{
   font-style: normal;
 }
 
-img{
+img, video{
   max-width: 100%;
   display: block;
 }
