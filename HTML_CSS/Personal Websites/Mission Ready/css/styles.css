@@ -163,7 +163,7 @@ body{
   
   fieldset {
     margin: 0 auto;
-    width: 90%;
+    width: fit-content;
   }
 
   fieldset legend {
@@ -426,7 +426,7 @@ body{
   .form-grid {
     margin-left: 1%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 10px;
   }
 
@@ -437,7 +437,7 @@ body{
   
   fieldset {
     margin: 0 auto;
-    width: 90%;
+    width: fit-content;
   }
 
   fieldset legend {
@@ -719,7 +719,7 @@ body{
   .form-grid {
     margin-left: 1%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 10px;
   }
 
@@ -730,7 +730,7 @@ body{
   
   fieldset {
     margin: 0 auto;
-    width: 90%;
+    width: fit-content;
   }
 
   fieldset legend {
@@ -1044,7 +1044,7 @@ body{
   .form-grid {
     margin-left: 1%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 10px;
   }
 
@@ -1055,7 +1055,7 @@ body{
   
   fieldset {
     margin: 0 auto;
-    width: 90%;
+    width: fit-content;
   }
 
   fieldset legend {
