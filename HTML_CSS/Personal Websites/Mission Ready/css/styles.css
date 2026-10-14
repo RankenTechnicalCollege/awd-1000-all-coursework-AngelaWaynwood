@@ -164,6 +164,8 @@ body{
   fieldset {
     margin: 0 auto;
     width: fit-content;
+    background-color: #926d51;
+    border: 3px solid #382618;
   }
 
   fieldset legend {
@@ -172,7 +174,7 @@ body{
 }
 
   .btn-s {
-	border: none;
+	border: 1px solid #382618;
 	margin: 0 auto;
 	display: block;
 	padding: 2%;
@@ -438,6 +440,8 @@ body{
   fieldset {
     margin: 0 auto;
     width: fit-content;
+    background-color: #926d51;
+    border: 3px solid #382618;
   }
 
   fieldset legend {
@@ -446,7 +450,7 @@ body{
 }
 
   .btn-s {
-	border: none;
+	border: 1px solid #382618;
 	margin: 0 auto;
 	display: block;
 	padding: 2%;
@@ -731,6 +735,8 @@ body{
   fieldset {
     margin: 0 auto;
     width: fit-content;
+    background-color: #926d51;
+    border: 3px solid #382618;
   }
 
   fieldset legend {
@@ -739,7 +745,7 @@ body{
 }
 
   .btn-s {
-	border: none;
+	border: 1px solid #382618;
 	margin: 0 auto;
 	display: block;
 	padding: 2%;
@@ -1056,6 +1062,8 @@ body{
   fieldset {
     margin: 0 auto;
     width: fit-content;
+    background-color: #926d51;
+    border: 3px solid #382618;
   }
 
   fieldset legend {
@@ -1064,7 +1072,7 @@ body{
 }
 
   .btn-s {
-	border: none;
+	border: 1px solid #382618;
 	margin: 0 auto;
 	display: block;
 	padding: 2%;
