@@ -4,6 +4,10 @@
     Date: 10/14/2026
 */
 
-function hide() {
-    
-}
+$( "#hide" ).on( "click", function(){
+    $( "#hide" ).hide()
+});
+
+$( "#show" ).on( "click", function(){
+    $( "#hide" ).show()
+});

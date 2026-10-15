@@ -3,7 +3,8 @@
 <html lang="en">
 
 <head>
-
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <title>Chapter 10, Extend</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,8 +24,8 @@
             <p>I know how to add functionality to webpages with JavaScript.</p>
             <p>I understand how to use the jQuery library.</p>
 
-            <button id="hide">Hide</button>
-            <button id="show">Show</button>
+            <button id="hide" onclick="show()">Hide</button>
+            <button id="show" onclick="hide()">Show</button>
 
         </article>
 
@@ -35,8 +36,7 @@
         </footer>
 
     </div>
-<script src="scripts/script.js"></script>
-<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
