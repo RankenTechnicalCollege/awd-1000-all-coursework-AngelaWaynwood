@@ -5,9 +5,9 @@
 */
 
 $( "#hide" ).on( "click", function(){
-    $( "#hide" ).hide()
+    $( "p" ).hide()
 });
 
 $( "#show" ).on( "click", function(){
-    $( "#hide" ).show()
+    $( "p" ).show()
 });
