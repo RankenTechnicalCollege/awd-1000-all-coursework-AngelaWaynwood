@@ -20,29 +20,51 @@ img, video{
   display: block;
 }
 
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile h1 {
+  padding: 2%;
+  text-align: center;
+  margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.tab-desk, .desktop, #nav-links{
+    display: none;
+}
+
 /* Style rules for navigation */
 nav{
   background-color: #2a1f14;
 }
 
-nav ul{
-  list-style-type: none;
-  margin: 0;
+.mobile-nav a {
+  color: #fff;
   text-align: center;
-}
-
-nav li{
-  display: inline-block;
-  font-size: 1.5em;
-  font-family: Geneva, Arial,sans-serif;
-  font-weight: bold;
-}
-
-nav li a{
-  display: block;
-  color: #f6eee4;
-  padding: 0.5em, 2em, 0.5em, 2em;
+  font-size: 2em;
   text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
 }
 
 /* Style rules for main content */
@@ -63,14 +85,14 @@ main ul{
   list-style-type: square;
 }
 
-#link{
+.link{
   color: #4d3319;
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
 }
 
-#action{
+.action{
   font-size: 1.75em;
   font-weight: bold;
   text-align: center;
@@ -105,6 +127,34 @@ figcaption{
 
 .contact, #form h2{
   text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+a.tel-link {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#questions p {
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 {
+  display: none;
 }
 
 /* Style rules for form elements */
@@ -154,19 +204,31 @@ footer a{
     display: block;
   }
 
-  .mobile, .mobile-tablet{
+  .mobile, .mobile-tablet, .mobile-nav{
     display: none;
   }
 
   /* Tablet Viewport: Style rules for nav area */
+
+  nav ul{
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  }
+
   nav li{
     border-top: none;
     display: inline-block;
     font-size: 1.25em;
+    font-family: Geneva, Arial,sans-serif;
+    font-weight: bold;
   }
 
   nav li a{
     padding: 0.5em;
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
   }
 
   .grid{

@@ -2,7 +2,7 @@
 <!-- 	
 	Student Name: Layne Heim
 	File Name: contact.html
-	Date: 08/27/2026
+	Date: 10/16/2026
 -->
 <html lang="en">
 
@@ -19,15 +19,37 @@
 
 <body>
   <div id="wrapper">
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+      <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="partnership.html">Partnership</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <a class="nav-icon" onclick="hamburger()">
+        <div id="icon">&#9776;</div>
+      </a>
+    </nav>
+
     <header>
-      <a href="index.html"><img src="images/baby-hawk.jpg" alt="rescued baby hawk"></a>
+      <div class="tab-desk">
+        <a href="index.html"><img src="images/baby-hawk.jpg" alt="rescued baby hawk"></a>
+      </div>
+      <div class="mobile">
+        <h1>&#128062; Wild Rescue</h1>
+        <h3>Rescue. Rehabilitate. Release.</h3>
+      </div>
     </header>
 
-    <nav>
+    <nav class="tab-desk">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="partnership">Partnership</a></li>
+        <li><a href="partnership.html">Partnership</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="faqs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -37,7 +59,7 @@
     <main>
       <div id="contact">
         <h2>You can reach us at:</h2>
-        <p class="mobile">Office: (814) 555-8989</p>
+        <p class="mobile"><a class="tel-link round" href="tel+18145558989">(814) 555-8989</a></p>
         <p class="tab-desk">(814) 555-8989</p>
         <p>Email: <a href="mailto:contact@wildrescues.net" class="link">contact@wildrescues.net</a></p>
         <p>Address: <a href="https://maps.app.goo.gl/KvNhnWSL1FFcCo5C6" class="link" target="_blank">8989 Rescue Drive,
@@ -63,9 +85,11 @@
             <legend>Additional Information</legend>
             <p>I would like more information about:</p>
             <label for="vol"><input type="radio" name="info" id="vol" value="Volunteering">Volunteering</label>
-            <label for="sponsor"><input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">Sponsorship Opportunities</label>
+            <label for="sponsor"><input type="radio" name="info" id="sponsor"
+                value="Sponsorship Opportunities">Sponsorship Opportunities</label>
             <label for="wild"><input type="radio" name="info" id="wild" value="Wildlife">Wildlife</label>
-            <label for="other"><input type="radio" name="info" id="other" value="Other">Other, please specify below.</label>
+            <label for="other"><input type="radio" name="info" id="other" value="Other">Other, please specify
+              below.</label>
             <label for="questions">What questions do you have for us?</label>
             <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
           </fieldset>
@@ -79,6 +103,7 @@
       <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a>
     </footer>
   </div>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <!-- 	
 	Student Name: Layne Heim
 	File Name: index.html
-	Date: 08/27/2026
+	Date: 10/16/2026
 -->
 <html lang="en">
 
@@ -19,11 +19,33 @@
 
 <body>
   <div id="wrapper">
+
+    <!-- Mobile Nav -->
+     <nav class="mobile-nav">
+      <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="partnership.html">Partnership</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <a class="nav-icon" onclick="hamburger()">
+        <div id="icon">&#9776;</div>
+      </a>
+     </nav>
+
     <header>
+      <div class="tab-desk">
       <a href="index.html"><img src="images/baby-hawk.jpg" alt="rescued baby hawk"></a>
+      </div>
+      <div class="mobile">
+        <h1>&#128062; Wild Rescue</h1>
+        <h3>Rescue. Rehabilitate. Release.</h3>
+      </div>
     </header>
 
-    <nav>
+    <nav class="tab-desk">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -59,6 +81,7 @@
       <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a>
     </footer>
   </div>
+<script src="scripts/script.js"></script>
 </body>
 
 </html>
