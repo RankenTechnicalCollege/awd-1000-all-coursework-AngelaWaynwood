@@ -30,7 +30,7 @@
 
   <nav>
     <div class="topnav">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html" class="active" onmouseenter="mouseOn()" onmouseleave="mouseOff()">Home</a>
       <div class="myLinks">
         <a href="past.html">Past</a>
         <a href="today.html">Today</a>
@@ -136,7 +136,7 @@
         <li>Who invented it: Many people, most famously Karl Benz</li>
         <li>Uses: Allowed the creation of automobile and the jet engine</li>
       </ul>
-        <br>
+      <br>
       <ul>
         <li>Technology's Importance: Health</li>
         <li>Year: 1796</li>
@@ -144,7 +144,7 @@
         <li>Who invented it: Edward Jenner</li>
         <li>Uses: Increased the lifespan and health of humanity</li>
       </ul>
-        <br>
+      <br>
       <ul>
         <li>Technology's Importance: Historical</li>
         <li>Year: 1450</li>
@@ -152,7 +152,7 @@
         <li>Who invented it: Johannes Gutenberg</li>
         <li>Uses: Mass produced books and newspapers</li>
       </ul>
-        <br>
+      <br>
       <ul>
         <li>Technology's Importance: Housing</li>
         <li>Year: 1902</li>
@@ -160,7 +160,7 @@
         <li>Who invented it: Willis Carrier</li>
         <li>Uses: Cooled down houses, allowing expansion in places with high temperatures like Phoenix, Arizona</li>
       </ul>
-        <br>
+      <br>
       <ul>
         <li>Technology's Importance: Clothing</li>
         <li>Year: 1830</li>
@@ -168,7 +168,7 @@
         <li>Who invented it: Barthelemy Thimonnier</li>
         <li>Uses: Reduced the time it took to make clothing</li>
       </ul>
-        <br>
+      <br>
       <ul>
         <li>Technology's Importance: Military</li>
         <li>Year: 1935</li>
@@ -176,7 +176,7 @@
         <li>Who invented it: Robert Watson-Watt &amp; Arnold Wilkins</li>
         <li>Uses: To, at first, detect aircraft during the war</li>
       </ul>
-        <br>
+      <br>
       <ul>
         <li>Technology's Importance: Energy</li>
         <li>Year: 1942</li>
@@ -198,16 +198,7 @@
   <footer>
     <p>&copy; 2023 Tech Advancments. All rights reserved.</p>
   </footer>
-  <script>
-    function myFunction() {
-      var x = document.querySelector(".myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

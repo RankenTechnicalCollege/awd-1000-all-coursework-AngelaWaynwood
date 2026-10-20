@@ -30,7 +30,7 @@
 
   <nav>
     <div class="topnav">
-      <a href="today.html" class="active">Today</a>
+      <a href="today.html" class="active" onmouseenter="mouseOn()" onmouseleave="mouseOff()">Today</a>
       <div class="myLinks">
         <a href="index.html">Home</a>
         <a href="past.html">Past</a>
@@ -112,16 +112,7 @@
   <footer>
     <p>&copy; 2023 Tech Advancments. All rights reserved.</p>
   </footer>
-  <script>
-    function myFunction() {
-      var x = document.querySelector(".myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

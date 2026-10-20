@@ -58,6 +58,10 @@ body{
   font-family: Iceland, Arial, Cambria;
 }
 
+#mobile ul {
+  list-style-type: none;
+}
+
 img{
   max-width: 100%;
   display: block;
@@ -75,6 +79,15 @@ figure{
   box-shadow: 6px 6px 10px rgba(26, 46, 67, 0.5);
   max-width: 200px;
   margin: 2% auto;
+}
+
+figure:hover {
+  animation: tech 2s;
+}
+
+@keyframes tech {
+  from {transform: scale(1);}
+  to {transform: scale(1.1);}
 }
 
 figcaption{
@@ -114,6 +127,10 @@ label{
   color: #181818;
   font-size: 1.25em;
   border-radius: 10px;
+}
+
+video {
+  width: 200px;
 }
 
 /* Style rules for footer */
@@ -170,11 +187,6 @@ footer{
     top: 0;
   }
 
-  .topnav a:hover {
-    background-color: #ddd;
-    color: rgb(95, 130, 163);
-  }
-
   .active {
     background-color: #053c5d;
     color: white;
@@ -217,6 +229,10 @@ footer{
 
   aside{
     grid-column: 1 / span 1;
+  }
+
+  video {
+    width: 200px;
   }
 }
 
@@ -287,6 +303,10 @@ footer{
 
   aside{
     grid-column: 1 / span 2;
+  }
+
+  video {
+    width: 500px;
   }
 
   /* Desktop style for table */
@@ -422,6 +442,10 @@ footer{
   aside{
     grid-column: 1 / span 2;
   }
+
+  video {
+  width: 1000px;
+}
 
   /* Large Desktop style for table */
   #tech {
