@@ -3,9 +3,12 @@
       Project 02-02
 
       Application to test for completed form
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 10/27/2026
 
       Filename: project02-02.js
  */
  
+function verifyForm() {
+      let name = document.getElementById("name").value;
+}
