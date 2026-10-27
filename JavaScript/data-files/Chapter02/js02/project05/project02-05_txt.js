@@ -76,7 +76,7 @@ document.getElementById("buttonEnter").onclick = function() {
 }
 
 // Clear the calculator window if the C key is clicked
-document.getElementById("buttonClear").onclick = clearCalculator();
+document.getElementById("buttonClear").onclick = clearCalculator;
 
 
 
@@ -88,7 +88,7 @@ function runCalculator(character) {
    let calcValue = document.getElementById("calcWindow").value;
    
    // Add the character to the calculator string or if its empty (the enter key) evaluate the equation
-   (character) ? calcValue += character : calcValue += " = " + evalEq(calcValue) + "\n";
+   (character !== "") ? calcValue += character : calcValue += " = " + evalEq(calcValue) + "\n";
    
    // Update the characters displayed in the calculator window.
    document.getElementById("calcWindow").value = calcValue;
