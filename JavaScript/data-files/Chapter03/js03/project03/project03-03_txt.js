@@ -3,8 +3,8 @@
       Project 03-03
 
       Application to generate a movie list
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/06/2026
 
       Filename: project03-03.js
 */
@@ -57,4 +57,8 @@ links[7] = "https://www.imdb.com/title/tt0050083/?ref_=adv_li_tt";
 links[8] = "https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt";
 links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 
+let htmlCode = "";
 
+for (let i = 0; i < titles.length; i++) {
+      
+}
