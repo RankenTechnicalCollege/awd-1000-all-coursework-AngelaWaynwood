@@ -3,8 +3,8 @@
       Project 03-04
 
       Application to write a list of customer reviews
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/09/2026
 
       Filename: project03-04.js
 */
@@ -21,3 +21,15 @@ let reviews = [
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
 
+starImages(rating); {
+let imageText = "";
+for (i = 0; i <= rating.value; i++) {
+      imageText += "<img src = 'star.png' alt= ''>";
+}
+      return imageText;
+}
+
+for(i = 0; i < reviewers.length; i++); {
+let reviewCode = "";
+      if
+}
