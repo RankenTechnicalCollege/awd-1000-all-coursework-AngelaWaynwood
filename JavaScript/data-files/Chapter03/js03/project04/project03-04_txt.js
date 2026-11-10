@@ -21,7 +21,7 @@ let reviews = [
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
 
-starImages(rating); {
+function starImages(rating) {
 let imageText = "";
 for (i = 0; i <= rating.value; i++) {
       imageText += "<img src = 'star.png' alt= ''>";
@@ -30,11 +30,11 @@ for (i = 0; i <= rating.value; i++) {
       return imageText;
 }
 
-for(i = 0; i < reviewers.length; i++); {
+for(i = 0; i < reviewers.length; i++) {
 let reviewCode = "";
-      if (reviewType === "P") {
+      if (reviewType[i] === "P") {
             reviewCode += "<table class = 'prime'>";
-      } else if (reviewType === "N") {
+      } else if (reviewType[i] === "N") {
             reviewCode += "<table class = 'new'>";
       } else {
             reviewCode += "<table>";
@@ -43,6 +43,7 @@ let reviewCode = "";
       reviewCode += `<caption>${reviewTitles[i]}</caption>
       <tr><th>By</th><td>${reviewers[i]}</td></tr>
       <tr><th>Review Date</th><td>${reviewDates[i]}</td></tr>
+      <tr><th>Rating</th><td>${starImages(stars[i])}</td></tr>
       <tr><td colspan='2'>${reviews[i]}</td></tr>
       </table>`
 

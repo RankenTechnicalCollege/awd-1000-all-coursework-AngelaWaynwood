@@ -3,8 +3,8 @@
       Project 03-05
 
       Application to generate a horizontal bar chart
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/10/2026
 
       Filename: project03-05.js
 */
