@@ -26,10 +26,25 @@ let imageText = "";
 for (i = 0; i <= rating.value; i++) {
       imageText += "<img src = 'star.png' alt= ''>";
 }
+
       return imageText;
 }
 
 for(i = 0; i < reviewers.length; i++); {
 let reviewCode = "";
-      if
+      if (reviewType === "P") {
+            reviewCode += "<table class = 'prime'>";
+      } else if (reviewType === "N") {
+            reviewCode += "<table class = 'new'>";
+      } else {
+            reviewCode += "<table>";
+      }
+
+      reviewCode += `<caption>${reviewTitles[i]}</caption>
+      <tr><th>By</th><td>${reviewers[i]}</td></tr>
+      <tr><th>Review Date</th><td>${reviewDates[i]}</td></tr>
+      <tr><td colspan='2'>${reviews[i]}</td></tr>
+      </table>`
+
+      document.getElementsByTagName('article')[0].insertAdjacentHTML('beforeend', reviewCode);
 }
