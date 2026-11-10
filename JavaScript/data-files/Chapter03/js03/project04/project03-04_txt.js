@@ -23,14 +23,14 @@ let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with
 
 function starImages(rating) {
 let imageText = "";
-for (i = 0; i <= rating.value; i++) {
+for (let i = 0; i <= rating.value; i++) {
       imageText += "<img src = 'star.png' alt= ''>";
 }
 
       return imageText;
 }
 
-for(i = 0; i < reviewers.length; i++) {
+for(let i = 0; i < reviewers.length; i++) {
 let reviewCode = "";
       if (reviewType[i] === "P") {
             reviewCode += "<table class = 'prime'>";
