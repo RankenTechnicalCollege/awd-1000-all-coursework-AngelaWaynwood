@@ -1,6 +1,7 @@
 const fruits = ["Apple", "Banana", "Cherry", "Date"];
     const button = document.getElementById("printBtn");
     const outputList = document.getElementById("outputList");
+    console.log(button);
 
     button.addEventListener("click", function() {
       // Clear previous output so it doesn't duplicate on multiple clicks

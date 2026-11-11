@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Favorite Fruits</title>
-  <script src="javascript/favorite-movie-js.js"></script>
+  <title>Favorite Movies</title>
+  <script src="javascript/favorite-movie-js.js" defer></script>
 </head>
 
 <body>
   <div class="container">
-    <h2>My Favorite Fruits</h2>
+    <h2>My Favorite Movies</h2>
 
-    <input type="text" id="movie" placeholder="Enter your favorite movie">
+    <input type="text" id="add" placeholder="Enter your favorite movie">
 
 
-    <button type="button" onclick="addMovie()" id="printAry" class="btn">Add Movie</button>
+    <button type="button" id="printBtn">Add Movie</button>
 
 
     <h3>Favorites</h3>
-    <ul id="favorites"></ul>
+    <ul id="outputList"></ul>
 
   </div>
 </body>

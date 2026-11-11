@@ -1,37 +1,17 @@
-const favoriteMovies = ["Dredd(2012)", "Die Hard", "Hunger Games"];
+let movies = ["Dredd (2012)", "Die Hard", "The Hunger Games"];
+    const button = document.getElementById("printBtn");
+    const outputList = document.getElementById("outputList");
+    const input = document.getElementById("add");
+    
+
+    button.addEventListener("click", function() {
+      outputList.innerHTML = ""; 
+
+      movies.push(input.value);
+
+      for (let i = 0; i < movies.length; i++) {
+        outputList.innerHTML += `<li>${movies[i]}</li>`;
+      }
+    });
 
 
-const movieInput = document.getElementById("movie");
-const button = document.getElementById("printAry");
-const output = document.getElementById("favorites");
-
-
-let mov = favoriteMovies.length;
-let text = "";
-
-
-function addMovie() {
-  const input = document.getElementById("movieInput");
-  const movieName = input.value.trim();
-
-
-  if (movieName) {
-    movies.push(movieName);
-    console.log("Updated favoriteMovies array:", favoriteMovies);
-    input.value = "";
-  }
-}
-
-
-button.addEventListener("click", addMovie()); {
-  output.innerHTML = "";
-
-
-  for (let i = 0; i < mov; i++) {
-    output += `<li>${favoriteMovies[i]}</li>`;
-   
-  }
-}
-
-
-document.getElementById("favorites").innerHTML = text;
