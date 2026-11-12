@@ -23,26 +23,26 @@ document.getElementById("comment").addEventListener("keyup", updateCount);
 
 // Function to update the count with each keyup event
 function updateCount() {
-   alert("inside function");
+   //alert("inside function");
    // Set the warning box to an empty text string 
    warningBox.innerHTML = "";
    
    // Count the number of characters in the comment box
-   commentText = document.getElementById("comment").value;
+   let commentText = document.getElementById("comment").value;
 
-   charCount = countCharacters(commentText);
-      alert("Comment text " + charCount);
+   let charCount = countCharacters(commentText);
+      //alert("Comment text " + charCount);
 
    wordCountBox.innerHTML = charCount;
 
    try {
      if  (charCount > MAX_REVIEW) {
-      throw new Error("You have exceeded the character count limit")
+      throw "You have exceeded the character count limit";
      }
    } catch(err) {
-      warningBox.innerHTML = err.message;
+      warningBox.innerHTML = err;
    } finally {
-      wordCountBox.innerHTML = charCount.value;
+      wordCountBox.innerHTML = charCount;
    }
 }
 
