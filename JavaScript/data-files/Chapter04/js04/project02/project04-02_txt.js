@@ -3,8 +3,8 @@
       Project 04-02
 
       Application to display a random Jane Austen Quote
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/12/2026
 
       Filename: project04-02.js
 */
@@ -39,11 +39,11 @@ function quoteGenerator() {
    randomQuote = randomInt(0, quoteCount);
    
    // Retrieve a randomly-selected quote
-   quote = quotes[randomQuotes];
+  let quote = quotes[randomQuote];
    
    
    // Display the random quote
-   document.getElementByTagName("blockquote")[1].innerHTML = quote;
+   document.getElementsByTagName("blockquote")[1].innerHTML = quote;
 }
 
 
