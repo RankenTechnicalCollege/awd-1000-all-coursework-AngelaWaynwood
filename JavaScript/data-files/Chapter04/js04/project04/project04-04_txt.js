@@ -3,20 +3,21 @@
       Project 04-04
 
       Application to determine change from a cash amount
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/12/2026
 
       Filename: project04-04.js
 */
+"use strict";
 
 // Global variables
-let cashBox = document.getElementById(cash);
-let billBox = document.getElementById(bill);
-let changeBox = document.getElementById(change);
+let cashBox = document.getElementById("cash");
+let billBox = document.getElementById("bill");
+let changeBox = document.getElementById("change");
 
 // Event handlers to be run when the cash or bill value changes
-cashBox.addEventListener("change", runRegister);
-billBox.addEventListener("change", runRegister);
+cashBox.addEventListener("change", runTheRegister);
+billBox.addEventListener("change", runTheRegister);
 
 // Function to reset the values in the web page
 function zeroTheRegister() {
@@ -101,6 +102,7 @@ function determineCoin(cashValue, currencyUnit) {
    // The parseInt() function returns the integer value of the ratio
    return parseInt(cashValue/currencyUnit);
 }
+//Fix this or else every .10 cents after $10 is negative ^
 
  // Function to display a numeric value as a text string in the format ##.## 
  function formatCurrency(value) {

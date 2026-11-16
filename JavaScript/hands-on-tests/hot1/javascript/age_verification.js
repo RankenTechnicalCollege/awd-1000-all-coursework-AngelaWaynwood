@@ -4,7 +4,6 @@ const button = document.getElementById("submit");
 
 function verifyAge() {
   const input = document.getElementById("input").value;
-  button.addEventListener("click", verifyAge());
   const age = parseInt(input, 1);
 
   if (!age || isNaN(age)) {
@@ -19,3 +18,5 @@ function verifyAge() {
     window.alert("You're not old enough!");
   }
 }
+
+button.addEventListener("click", verifyAge());
