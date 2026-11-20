@@ -4,8 +4,8 @@
    <!--
       JavaScript
 
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/20/2026
 
       Filename: index.htm
    -->
@@ -67,15 +67,20 @@
          var itemTotal = 0;
          var tax = 0;
          var totalWithTax = 0;
-         items = document.getElementsByTagName("input");
+         var items = document.getElementsByTagName("input");
+      // ^ Added missing var keyword to declare items variable.
          var cells = document.getElementsByTagName("td");
-         for (var i = 0; i < 3; i++) {
+         for (var i = 0; i < 5; i++) {
+            // changed (i < 3) to (i < 5) to correctly loop through all 5 items.
             if (items[i].checked) {
                itemTotal += (items[i].value * 1);
             }
          }
-         tax = itemTotal * 0.1;
-         totalWithTax = itemTotal + taxTotal;
+         tax = (itemTotal * .05) /100;
+         console.log("Item Total: " + itemTotal);
+         console.log("Tax: " + tax);
+         totalWithTax = itemTotal + tax;
+         // Removed taxTotal as that variable was not defined while tax is.
          cells[1].innerHTML = (itemTotal / 100).toFixed(2);
          cells[3].innerHTML = (tax / 100).toFixed(2);
          cells[5].innerHTML = "$" + (totalWithTax / 100).toFixed(2);
@@ -83,8 +88,10 @@
       
       // add event listener to Submit button
       var submitButton = document.getElementById("sButton");
-      submitButton.addEventListener("click, calcTotal); 
-    
+      submitButton.addEventListener("click", calcTotal);
+      //--------------------> Added missing quote for event listener, click.
    </script>
 </body>
 </html>
+
+// changed (itemTotal * .01) to (itemTotal * (.05 / 100)) to correctly calculate 5% tax.
