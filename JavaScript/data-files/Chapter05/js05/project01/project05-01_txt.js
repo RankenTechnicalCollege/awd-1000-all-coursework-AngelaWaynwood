@@ -29,9 +29,9 @@ let timeLeft = quizTime;
 // Declare the ID for timed commands
 // and the node list for questions
 startQuiz.addEventListener("click", function() {
-   overlay.className = "showquiz";
-   countdown();
-}, 1000);
+   overlay.setAttribute("class", "showquiz");
+   setInterval(countdown, 1000);
+});
 
 function countdown() {
    if (timeLeft === 0) {
