@@ -14,7 +14,7 @@ var toc = document.getElementById("toc");
 var headingCount = 1;
 const heading = "h2";
 
-for (let n = sourceDoc.firstElementChild; n !== null; n = n.nextElementSibling) {
+for (let n = sourceDoc.firstElementChild; n != null; n = n.nextElementSibling) {
       console.log(n.nodeName);
   if (n.nodeName === heading) {
       var anchor = document.createElement("a");
