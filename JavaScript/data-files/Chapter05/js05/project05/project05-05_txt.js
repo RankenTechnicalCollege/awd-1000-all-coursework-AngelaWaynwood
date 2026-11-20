@@ -4,8 +4,8 @@
       Project 05-05
 
       Project to create a Concentration game with flipping tiles
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/20/2026
 
       Filename: project05-05.js
 */
