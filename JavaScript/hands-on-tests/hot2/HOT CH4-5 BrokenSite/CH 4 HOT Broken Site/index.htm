@@ -34,7 +34,8 @@
          <label for="item3">Enter The Gungeon ($13.49)</label>
          <input type="checkbox" id="item4" value="499" />
          <label for="item4">Hover Junkers ($4.99)</label>
-         <input type="checkbox" id="item5" value="599" />
+         <input type="checkbox" id="item5" value="899" />
+              /* Changed the value from 599 to 899 ^ */
          <label for="item5">Good Robot ($8.99)</label>
          <input type="button" value="Calculate" id="sButton" />
       </form>
@@ -76,9 +77,8 @@
                itemTotal += (items[i].value * 1);
             }
          }
-         tax = (itemTotal * .05) /100;
-         console.log("Item Total: " + itemTotal);
-         console.log("Tax: " + tax);
+         tax = (itemTotal * .05);
+         // changed (itemTotal * .01) to (itemTotal * .05) to correctly calculate 5% tax.
          totalWithTax = itemTotal + tax;
          // Removed taxTotal as that variable was not defined while tax is.
          cells[1].innerHTML = (itemTotal / 100).toFixed(2);
@@ -93,5 +93,3 @@
    </script>
 </body>
 </html>
-
-// changed (itemTotal * .01) to (itemTotal * (.05 / 100)) to correctly calculate 5% tax.
