@@ -12,7 +12,7 @@
 var sourceDoc = document.getElementById("source_doc");
 var toc = document.getElementById("toc");
 var headingCount = 1;
-const heading = "h2";
+const heading = "H2";
 
 for (let n = sourceDoc.firstElementChild; n != null; n = n.nextElementSibling) {
       console.log(n.nodeName);
