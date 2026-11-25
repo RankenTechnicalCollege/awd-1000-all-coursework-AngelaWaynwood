@@ -4,8 +4,8 @@
       Project 05-04
 
       Project to display footnotes in a popup window
-      Author: 
-      Date:   
+      Author: Layne Heim
+      Date: 11/23/2026
 
       Filename: footnotes.js
 */
